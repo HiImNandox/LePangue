@@ -55,6 +55,6 @@ self.addEventListener("fetch", e=> {
             }
             //Recuperar la petición de la url
             return fetch(e.request)
-        })
-    ).catch(() => caches.match("offline.html"))
+        }).catch(() => caches.match("offline.html"))
+    )
 })
