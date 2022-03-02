@@ -3,10 +3,10 @@
 
 const CACHE_NAME = "v1_cache_LePangue",
 urlsToCache = [
-    "../",
-    "../css/estilos.css",
+    "./",
+    "./css/estilos.css",
     "./script.js",
-    "../img/favicon.svg"
+    "./img/favicon.svg"
 ]
 
 // Este evento almacenará los elementos estaticos en cache
