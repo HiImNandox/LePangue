@@ -1,4 +1,4 @@
-
+;
 //Asignar nombre y versión al cache
 
 const CACHE_NAME = "v1_cache_LePangue",
@@ -53,9 +53,8 @@ self.addEventListener("fetch", e=> {
                 // Recuperando del cache
                 return res
             }
-
             //Recuperar la petición de la url
             return fetch(e.request)
-        })
+        }).catch(() => caches.match("./offline.html"))
     )
 })
