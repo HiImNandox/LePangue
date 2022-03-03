@@ -52,7 +52,7 @@
       </style>
     </head>
     <body>
-      <img src="img/pwa/error-512x512.png" alt="imagen error">
+      <img src="img/pwa/error-256x256.png" alt="imagen error">
       <h1>Estás desconectado</h1>
   
       <p>Haz clic en el botón para intentar una recarga.</p>
@@ -64,31 +64,7 @@
         document.querySelector("button").addEventListener("click", () => {
           window.location.reload();
         });
-  
-        // Escucha los cambios en la red, se recargará cuando se esté conectado.
-        // Esto maneja el caso cuando el dispositivo este completamente fuera de linea.
-        window.addEventListener('online', () => {
-          window.location.reload();
-        });
-  
-        // Checa si el servidor está respondiendo y recarga la página si lo esté.
-        // Esto maneja el caso de cuando el dispositivo esté en linea, pero el servidor
-        // esté fuera de linea o con problemas.
-        async function checkNetworkAndReload() {
-          try {
-            const response = await fetch('.');
-            // Verifica si tenemos una respuesta valida del servidor
-            if (response.status >= 200 && response.status < 500) {
-              window.location.reload();
-              return;
-            }
-          } catch {
-            // No se puede conectar al servidor, ignorar.
-          }
-          window.setTimeout(checkNetworkAndReload, 2500);
-        }
-  
-        checkNetworkAndReload();
+
       </script>
     </body>
   </html>

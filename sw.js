@@ -4,7 +4,9 @@
 const CACHE_NAME = "v1_cache_LePangue",
 urlsToCache = [
     "./img/pwa/error-512x512.png",
-    "./offline.html"
+    "./offline.html",
+    "./font/letra.ttf",
+    "./font/titulo.ttf"
 ]
 
 // Este evento almacenará los elementos estaticos en cache
