@@ -3,7 +3,7 @@
 
 const CACHE_NAME = "v1_cache_LePangue",
 urlsToCache = [
-    "./img/pwa/error-512x512.png",
+    "./img/pwa/error-256x256.png",
     "./offline.html",
     "./font/letra.ttf",
     "./font/titulo.ttf"
