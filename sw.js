@@ -3,11 +3,7 @@
 
 const CACHE_NAME = "v1_cache_LePangue",
 urlsToCache = [
-    "./",
-    "./css",
-    "./img",
-    "./js",
-    "./script.js"
+    "./offline.html"
 ]
 
 // Este evento almacenará los elementos estaticos en cache
